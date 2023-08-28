@@ -1,4 +1,4 @@
-module git.tekempire.net/khuedoan/homelab/gitea/config
+module git.lan.tekempire.net/khuedoan/homelab/gitea/config
 
 go 1.19
 

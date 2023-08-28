@@ -4,12 +4,12 @@ metadata:
   name: blog
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
-    external-dns.alpha.kubernetes.io/target: homelab-tunnel.tekempire.net
+    external-dns.alpha.kubernetes.io/target: homelab-tunnel.lan.tekempire.net
     external-dns.alpha.kubernetes.io/cloudflare-proxied: 'true'
 spec:
   ingressClassName: nginx
   rules:
-    - host: &host www.tekempire.net
+    - host: &host www.lan.tekempire.net
       http:
         paths:
           - pathType: ImplementationSpecific

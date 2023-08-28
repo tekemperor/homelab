@@ -1,6 +1,6 @@
 dex:
   config:
-    issuer: https://dex.tekempire.net
+    issuer: https://dex.lan.tekempire.net
     storage:
       type: kubernetes
       config:
@@ -14,13 +14,13 @@ dex:
         config:
           clientID: $GITEA_CLIENT_ID
           clientSecret: $GITEA_CLIENT_SECRET
-          redirectURI: https://dex.tekempire.net/callback
-          baseURL: https://git.tekempire.net
+          redirectURI: https://dex.lan.tekempire.net/callback
+          baseURL: https://git.lan.tekempire.net
     staticClients:
       - id: grafana-sso
         name: Grafana
         redirectURIs:
-          - 'https://grafana.tekempire.net/login/generic_oauth'
+          - 'https://grafana.lan.tekempire.net/login/generic_oauth'
         secretEnv: GRAFANA_SSO_CLIENT_SECRET
   envFrom:
     - secretRef:
@@ -32,7 +32,7 @@ dex:
       cert-manager.io/cluster-issuer: letsencrypt-prod
       hajimari.io/enable: 'false'
     hosts:
-      - host: &host dex.tekempire.net
+      - host: &host dex.lan.tekempire.net
         paths:
           - path: /
             pathType: ImplementationSpecific

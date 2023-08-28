@@ -8,7 +8,7 @@ jellyfin:
         hajimari.io/appName: Jellyfin
         hajimari.io/icon: filmstrip
       hosts:
-        - host: &host jellyfin.tekempire.net
+        - host: &host jellyfin.lan.tekempire.net
           paths:
             - path: /
               pathType: Prefix

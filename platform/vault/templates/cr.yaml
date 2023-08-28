@@ -74,7 +74,7 @@ spec:
     spec:
       ingressClassName: nginx
       rules:
-        - host: &host vault.tekempire.net
+        - host: &host vault.lan.tekempire.net
           http:
             paths:
               - backend:

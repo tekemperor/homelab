@@ -1,4 +1,4 @@
-module git.tekempire.net/khuedoan/homelab/vault/init
+module git.lan.tekempire.net/khuedoan/homelab/vault/init
 
 go 1.19
 

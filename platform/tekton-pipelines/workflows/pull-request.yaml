@@ -18,7 +18,7 @@ spec:
   params:
     - name: git_url
       # TODO don't need default, but invalid mem address if remove this
-      default: https://git.tekempire.net/foo/bar
+      default: https://git.lan.tekempire.net/foo/bar
     - name: git_revision
       default: master
   pipelineRef:

@@ -17,5 +17,5 @@ spec:
     spec:
       containers:
         - name: blog
-          image: registry.tekempire.net/blog:latest
+          image: registry.lan.tekempire.net/blog:latest
           imagePullPolicy: Always

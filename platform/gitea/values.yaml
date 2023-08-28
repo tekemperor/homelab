@@ -7,7 +7,7 @@ gitea:
       hajimari.io/appName: Gitea
       hajimari.io/icon: git
     hosts:
-      - host: &host git.tekempire.net
+      - host: &host git.lan.tekempire.net
         paths:
           - path: /
             pathType: Prefix
@@ -21,7 +21,7 @@ gitea:
     config:
       server:
         LANDING_PAGE: explore
-        ROOT_URL: https://git.tekempire.net
+        ROOT_URL: https://git.lan.tekempire.net
       webhook:
         ALLOWED_HOST_LIST: private
   persistence:

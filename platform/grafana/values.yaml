@@ -7,7 +7,7 @@ grafana:
       hajimari.io/appName: Grafana
       hajimari.io/icon: chart-bar
     hosts:
-      - &host grafana.tekempire.net
+      - &host grafana.lan.tekempire.net
     tls:
       - secretName: grafana-general-tls
         hosts:
@@ -22,7 +22,7 @@ grafana:
   envFromSecret: grafana-secrets
   grafana.ini:
     server:
-      root_url: https://grafana.tekempire.net
+      root_url: https://grafana.lan.tekempire.net
     auth.generic_oauth:
       enabled: true
       allow_sign_up: true
@@ -30,6 +30,6 @@ grafana:
       client_id: grafana-sso
       client_secret: $__env{GRAFANA_SSO_CLIENT_SECRET}
       scopes: openid profile email groups
-      auth_url: https://dex.tekempire.net/auth
-      token_url: https://dex.tekempire.net/token
-      api_url: https://dex.tekempire.net/userinfo
+      auth_url: https://dex.lan.tekempire.net/auth
+      token_url: https://dex.lan.tekempire.net/token
+      api_url: https://dex.lan.tekempire.net/userinfo
